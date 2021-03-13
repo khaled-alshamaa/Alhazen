@@ -56,3 +56,23 @@ Alhazen project for Arabic OCR in PHP (still in the pre-Alpha developing stage)
 ?>
 ```
 ![Sample output](sample-output.png)
+
+## Filtering Examples
+
+```php
+    /* 
+      Available filters:  
+      blurFilter, moreBlurFilter, sharpenFilter, hEdgesFilter, 
+      vEdgesFilter, dEdgesFilter, edgesFilter, embossFilter, and meanFilter
+    */
+    list($filter, $factor, $bias) = $obj->edgesFilter;  
+
+    $obj->im = $obj->applyFilter($filter, $factor, $bias);
+    
+    // $obj->checkSkin();
+```
+
+## References
+
+* Lode's Computer Graphics Tutorial [Image Filtering](https://lodev.org/cgtutor/filtering.html).
+* A Survey on Pixel-Based Skin Color Detection Techniques (2003) at [http://citeseerx.ist.psu.edu](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.5.521)
