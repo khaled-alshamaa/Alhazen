@@ -55,3 +55,4 @@ Alhazen project for Arabic OCR in PHP (still in the pre-Alpha developing stage)
     }
 ?>
 ```
+![Sample output](sample-pitput.png)
